@@ -109,7 +109,7 @@ This application is designed to be deployed on Vercel. To deploy:
 
 2. Deploy the application:
    ```
-   vercel
+   Railway
    ```
 
 ## How It Works
