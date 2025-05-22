@@ -14,7 +14,7 @@ A serverless application that classifies accents in audio/video content. This ap
 - **Frontend**: Next.js, React, TailwindCSS
 - **Backend**: Next.js API Routes, Python
 - **Audio Processing**: librosa, ffmpeg
-- **Deployment**: Vercel
+- **Deployment**: Railway
 
 ## Getting Started
 
@@ -49,18 +49,18 @@ Open [http://localhost:3000](http://localhost:3000) in your browser to see the a
 
 ### Deployment
 
-#### Deploying to Vercel
+#### Deploying to Railway
 
-This application is designed to be deployed on Vercel with both Next.js frontend and Python backend components.
+This application is designed to be deployed on railway with both Next.js frontend and Python backend components.
 
-1. **Install Vercel CLI**:
+1. **Install Railway CLI**:
    ```bash
-   npm install -g vercel
+   npm install -g railway
    ```
 
-2. **Login to Vercel**:
+2. **Login to Railway**:
    ```bash
-   vercel login
+   Railway login
    ```
 
 3. **Deploy the Application**:
@@ -68,8 +68,8 @@ This application is designed to be deployed on Vercel with both Next.js frontend
    # Navigate to the project directory
    cd accent-classifier
    
-   # Deploy to Vercel
-   vercel
+   # Deploy to Railway
+   Railway
    ```
 
 4. **Deployment Configuration**:
@@ -81,30 +81,30 @@ This application is designed to be deployed on Vercel with both Next.js frontend
 5. **Environment Variables** (if needed):
    You can set environment variables in the Vercel dashboard or using the CLI:
    ```bash
-   vercel env add MY_VARIABLE
+   railway env add MY_VARIABLE
    ```
 
 6. **Production Deployment**:
    After testing, deploy to production:
    ```bash
-   vercel --prod
+   railway --prod
    ```
 
 #### Troubleshooting Vercel Deployment
 
-- **Python Dependencies**: If you encounter issues with Python dependencies, check the `api/requirements.txt` file and ensure all versions are compatible with Vercel's Python runtime.
+- **Python Dependencies**: If you encounter issues with Python dependencies, check the `api/requirements.txt` file and ensure all versions are compatible with railway's Python runtime.
 
-- **Execution Timeout**: For longer processing times, the `maxDuration` in `vercel.json` is set to 30 seconds. If you need more time, consider optimizing your code or using external processing.
+- **Execution Timeout**: For longer processing times, the `maxDuration` in `railway.json` is set to 30 seconds. If you need more time, consider optimizing your code or using external processing.
 
-- **Memory Limits**: The application is configured with 1024MB of memory. If you need more, adjust the `memory` value in `vercel.json`.
+- **Memory Limits**: The application is configured with 1024MB of memory. If you need more, adjust the `memory` value in `railway.json`.
 
-- **File Upload Size**: Vercel has a 4.5MB limit for API requests. For larger audio files, consider using client-side processing or external storage solutions.
+- **File Upload Size**: railway has a 4.5MB limit for API requests. For larger audio files, consider using client-side processing or external storage solutions.
 
 This application is designed to be deployed on Vercel. To deploy:
 
 1. Install the Vercel CLI:
    ```
-   npm install -g vercel
+   npm install -g railway
    ```
 
 2. Deploy the application:
