@@ -60,7 +60,11 @@ This application is designed to be deployed on railway with both Next.js fronten
 
 2. **Login to Railway**:
    ```bash
+<<<<<<< HEAD
    railway login
+=======
+   Railway login
+>>>>>>> b23b4a5f6b54b6ff0343a9237058d98a2bff4ff9
    ```
 
 3. **Deploy the Application**:
@@ -69,7 +73,11 @@ This application is designed to be deployed on railway with both Next.js fronten
    cd accent-classifier
    
    # Deploy to Railway
+<<<<<<< HEAD
    railway
+=======
+   Railway
+>>>>>>> b23b4a5f6b54b6ff0343a9237058d98a2bff4ff9
    ```
 
 4. **Deployment Configuration**:
@@ -92,7 +100,11 @@ This application is designed to be deployed on railway with both Next.js fronten
 
 #### Troubleshooting Railway Deployment
 
+<<<<<<< HEAD
 - **Python Dependencies**: If you encounter issues with Python dependencies, check the `api/requirements.txt` file and ensure all versions are compatible with Railway's Python runtime.
+=======
+- **Python Dependencies**: If you encounter issues with Python dependencies, check the `api/requirements.txt` file and ensure all versions are compatible with railway's Python runtime.
+>>>>>>> b23b4a5f6b54b6ff0343a9237058d98a2bff4ff9
 
 - **Execution Timeout**: For longer processing times, the `maxDuration` in `railway.json` is set to 30 seconds. If you need more time, consider optimizing your code or using external processing.
 
@@ -109,7 +121,11 @@ This application is designed to be deployed on Railway. To deploy:
 
 2. Deploy the application:
    ```
+<<<<<<< HEAD
    railway
+=======
+   Railway
+>>>>>>> b23b4a5f6b54b6ff0343a9237058d98a2bff4ff9
    ```
 
 ## How It Works
