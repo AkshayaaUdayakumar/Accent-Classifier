@@ -14,7 +14,7 @@ A serverless application that classifies accents in audio/video content. This ap
 - **Frontend**: Next.js, React, TailwindCSS
 - **Backend**: Next.js API Routes, Python
 - **Audio Processing**: librosa, ffmpeg
-- **Deployment**: Railway
+- **Deployment**: railway
 
 ## Getting Started
 
@@ -51,20 +51,16 @@ Open [http://localhost:3000](http://localhost:3000) in your browser to see the a
 
 #### Deploying to Railway
 
-This application is designed to be deployed on railway with both Next.js frontend and Python backend components.
+This application is designed to be deployed on Railway with both Next.js frontend and Python backend components.
 
-1. **Install Railway CLI**:
+1. **Install Vercel CLI**:
    ```bash
    npm install -g railway
    ```
 
-2. **Login to Railway**:
+2. **Login to Vercel**:
    ```bash
-<<<<<<< HEAD
-   railway login
-=======
-   Railway login
->>>>>>> b23b4a5f6b54b6ff0343a9237058d98a2bff4ff9
+    railway login
    ```
 
 3. **Deploy the Application**:
@@ -73,11 +69,7 @@ This application is designed to be deployed on railway with both Next.js fronten
    cd accent-classifier
    
    # Deploy to Railway
-<<<<<<< HEAD
-   railway
-=======
-   Railway
->>>>>>> b23b4a5f6b54b6ff0343a9237058d98a2bff4ff9
+    railway
    ```
 
 4. **Deployment Configuration**:
@@ -87,7 +79,7 @@ This application is designed to be deployed on railway with both Next.js fronten
    - Railway will automatically detect Next.js and deploy accordingly
 
 5. **Environment Variables** (if needed):
-   You can set environment variables in the Railway dashboard or using the CLI:
+   You can set environment variables in the Vercel dashboard or using the CLI:
    ```bash
    railway env add MY_VARIABLE
    ```
@@ -100,32 +92,26 @@ This application is designed to be deployed on railway with both Next.js fronten
 
 #### Troubleshooting Railway Deployment
 
-<<<<<<< HEAD
-- **Python Dependencies**: If you encounter issues with Python dependencies, check the `api/requirements.txt` file and ensure all versions are compatible with Railway's Python runtime.
-=======
+
 - **Python Dependencies**: If you encounter issues with Python dependencies, check the `api/requirements.txt` file and ensure all versions are compatible with railway's Python runtime.
->>>>>>> b23b4a5f6b54b6ff0343a9237058d98a2bff4ff9
+
 
 - **Execution Timeout**: For longer processing times, the `maxDuration` in `railway.json` is set to 30 seconds. If you need more time, consider optimizing your code or using external processing.
 
 - **Memory Limits**: The application is configured with 1024MB of memory. If you need more, adjust the `memory` value in `railway.json`.
 
-- **File Upload Size**: railway has a 4.5MB limit for API requests. For larger audio files, consider using client-side processing or external storage solutions.
+- **File Upload Size**: Vercel has a 4.5MB limit for API requests. For larger audio files, consider using client-side processing or external storage solutions.
 
-This application is designed to be deployed on Railway. To deploy:
+This application is designed to be deployed on Vercel. To deploy:
 
-1. Install the Railway CLI:
+1. Install the Vercel CLI:
    ```
    npm install -g railway
    ```
 
 2. Deploy the application:
    ```
-<<<<<<< HEAD
-   railway
-=======
-   Railway
->>>>>>> b23b4a5f6b54b6ff0343a9237058d98a2bff4ff9
+    railway
    ```
 
 ## How It Works
